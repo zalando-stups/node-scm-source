@@ -1,0 +1,22 @@
+{
+  "name": "node-scm-source",
+  "version": "0.0.1",
+  "description": "Generates scm-source.json according to Zalando STUPS docs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "stups"
+  ],
+  "author": "Nikolaus Piccolotto <nikolaus.piccolotto@zalando.de>",
+  "license": "Apache 2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zalando-stups/node-scm-source.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zalando-stups/node-scm-source/issues"
+  },
+  "homepage": "https://github.com/zalando-stups/node-scm-source#readme"
+}
