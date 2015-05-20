@@ -1,6 +1,6 @@
 # node-scm-source
 
-Creates a `scm-source` JSON object according to [Zalando STUPS documentation](http://stups.readthedocs.org/en/latest/user-guide/application-development.html#docker).
+Creates a `scm-source` JSON object according to [Zalando STUPS documentation](http://stups.readthedocs.org/en/latest/user-guide/application-development.html#docker). Note that at this time it relies on `child_process.execSync` which is available only since **Node 0.12**. You will get an error with `0.11` or lower.
 
 ## Usage
 
