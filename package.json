@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/zalando-stups/node-scm-source/issues"
   },
-  "homepage": "https://github.com/zalando-stups/node-scm-source#readme"
+  "homepage": "https://github.com/zalando-stups/node-scm-source#readme",
+  "dependencies": {
+    "q": "^1.4.1"
+  }
 }
