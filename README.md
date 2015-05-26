@@ -21,3 +21,13 @@ Asynchronous use (mandatory with everything below Node 0.12):
     });
 
 `node-scm-source` will throw an error if you try to use it synchronously on Node <0.12.
+
+## Example integration with gulp
+
+    // using sync api here
+    var scm = require('node-scm-source'),
+        fs = require('fs'),
+        gulp = require('gulp');
+    gulp.task('scm', function(done) {
+        fs.writeFile('scm-source.json', JSON.stringify(scm(), null, 4), done);
+    });
