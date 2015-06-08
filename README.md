@@ -31,3 +31,24 @@ Asynchronous use (mandatory with everything below Node 0.12):
     gulp.task('scm', function(done) {
         fs.writeFile('scm-source.json', JSON.stringify(scm(), null, 4), done);
     });
+
+## NPM Scripts and CLI
+
+For convenience, it exposes `scm-source` command to that outputs the information to STDOUT which can be used from `package.json` script:
+
+
+```js
+// package.json
+{
+    ...
+    "scripts": {
+        "scm": "scm-source > scm-source.json"
+    },
+    ...
+    "devDependencies": {
+        "node-scm-source": "latest",
+        ...
+    }
+```
+
+And then you could do `npm run scm` to generate the file. You could also install this package globally to provide access to `scm-source` command from your favorite shell.
