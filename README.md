@@ -9,7 +9,7 @@ Synchronous use (only with Node 0.12 or better):
     var scm = require('node-scm-source');
     scm();
     > { revision: '79c5e3549682f918c81bdf36a4e361e0360d0c8e',
-      url: 'git@github.com:zalando-stups/node-scm-source.git',
+      url: 'git:git@github.com:zalando-stups/node-scm-source.git',
       status: '',
       author: 'npiccolotto' }
 
