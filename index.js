@@ -51,7 +51,7 @@ function getScmSource(done) {
         author = author[0];
         done({
             revision: revision.replace(LINE_BREAK, ''),
-            url: url.replace(LINE_BREAK, ''),
+            url: 'git:' + url.replace(LINE_BREAK, ''),
             status: status.replace(LINE_BREAK, ' ').trim(),
             author: author.replace(LINE_BREAK, '')
         });
