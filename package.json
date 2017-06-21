@@ -1,6 +1,6 @@
 {
   "name": "@zalando/node-scm-source",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Generates scm-source.json according to Zalando STUPS docs.",
   "main": "index.js",
   "bin": {
