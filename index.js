@@ -4,7 +4,7 @@ var process = require('child_process'),
 
 /**
  * Returns the scm-source.json accoring to
- * http://stups.readthedocs.org/en/latest/user-guide/application-development.html#docker
+ * http://stups.readthedocs.io/en/latest/user-guide/application-development.html#scm-source-json
  *
  * @return {Object} scm-source.json
  */
@@ -27,7 +27,7 @@ function getScmSource(done) {
             author = String(exec(AUTHOR_CMD)),
             json = {
                 revision: revision.replace(LINE_BREAK, ''),
-                url: url.replace(LINE_BREAK, ''),
+                url: 'git:' + url.replace(LINE_BREAK, ''),
                 status: status.replace(LINE_BREAK, ' ').trim(),
                 author: author.replace(LINE_BREAK, '')
             };
